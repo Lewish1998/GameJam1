@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://dum5vkgrv6ukg"]
+
+[ext_resource type="Script" path="res://StartPage.gd" id="1_x6qp2"]
+
+[node name="StartPage" type="Node2D"]
+script = ExtResource("1_x6qp2")
+
+[node name="Start" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 493.0
+offset_top = 59.0
+offset_right = 715.0
+offset_bottom = 173.0
+grow_horizontal = 2
+text = "Start
+"
+
+[node name="Howtoplay" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 495.0
+offset_top = 235.0
+offset_right = 717.0
+offset_bottom = 349.0
+grow_horizontal = 2
+text = "How to play
+"
+
+[node name="Quit" type="Button" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = 492.0
+offset_top = 417.0
+offset_right = 714.0
+offset_bottom = 531.0
+grow_horizontal = 2
+text = "Quit"
+
+[connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Howtoplay" to="." method="_on_howtoplay_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]

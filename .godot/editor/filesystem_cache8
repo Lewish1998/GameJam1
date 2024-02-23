@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1708720670
+icon.svg::CompressedTexture2D::8343095658532216360::1708715669::1708715679::1::::<><>::
+StartPage.gd::GDScript::-1::1708718562::0::1::::<>Node2D<>::
+::res://Background/::1708720313
+node_2d.tscn::PackedScene::4658977106732123555::1708720313::0::1::::<><>::uid://dv14dk1mdyma1::::res://startpage/background_layer_1.png
+::res://howtoplay/::1708720111
+how_to_play.gd::GDScript::-1::1708719892::0::1::::<>Node2D<>::
+how_to_play.tscn::PackedScene::5188055119370296586::1708720111::0::1::::<><>::res://howtoplay/how_to_play.gd
+::res://room1/::1708720111
+room_1.tscn::PackedScene::352263803751942077::1708720111::0::1::::<><>::
+::res://startpage/::1708720111
+background_layer_1.png::CompressedTexture2D::8688668305204087098::1708719982::1708719982::1::::<><>::
+background_layer_2.png::CompressedTexture2D::7583644443795581897::1708719982::1708719982::1::::<><>::
+background_layer_3.png::CompressedTexture2D::4747755359719525272::1708719982::1708719982::1::::<><>::
+start_page.tscn::PackedScene::8589671003647699986::1708720111::0::1::::<><>::res://StartPage.gd

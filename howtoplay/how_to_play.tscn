@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://cf6erlmoo8u5w"]
+
+[ext_resource type="Script" path="res://howtoplay/how_to_play.gd" id="1_yfh2m"]
+
+[node name="HowToPlay" type="Node2D"]
+script = ExtResource("1_yfh2m")
+
+[node name="Text" type="RichTextLabel" parent="."]
+offset_left = 106.0
+offset_top = 76.0
+offset_right = 1055.0
+offset_bottom = 421.0
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+[node name="Back" type="Button" parent="."]
+offset_left = 425.0
+offset_top = 473.0
+offset_right = 665.0
+offset_bottom = 565.0
+text = "Back to start"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
