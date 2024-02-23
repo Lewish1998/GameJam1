@@ -1,7 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://favy6128ix6t"]
+[gd_scene load_steps=3 format=3 uid="uid://favy6128ix6t"]
 
+[ext_resource type="Texture2D" uid="uid://d2abcrxyebju1" path="res://img/Scene1.png" id="1_loewr"]
 [ext_resource type="PackedScene" uid="uid://cfsa3a5ati2ko" path="res://Char/character.tscn" id="1_wmo41"]
 
 [node name="Room1" type="Node2D"]
 
+[node name="Scene1" type="Sprite2D" parent="."]
+position = Vector2(1681, 538.5)
+scale = Vector2(1.74271, 0.991667)
+texture = ExtResource("1_loewr")
+
 [node name="Character" parent="." instance=ExtResource("1_wmo41")]
+position = Vector2(810, 743)
