@@ -20,11 +20,27 @@ func _physics_process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
+	
+	
 	if direction:
+		# Walking animations
+		if direction == Vector2(-1, 0):
+			$AnimatedSprite2D.play("walk left")
+		if direction == Vector2(1, 0):
+			$AnimatedSprite2D.play("walk right")
+		if direction == Vector2(0, -1):
+			$AnimatedSprite2D.play("walk back")
+		if direction == Vector2(0, 1):
+			$AnimatedSprite2D.play("walk front")
+			
+		# movement
 		velocity = direction * SPEED
 
 
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		velocity.y = move_toward(velocity.y, 0, SPEED)
+		$AnimatedSprite2D.stop()
+		# TODO play idle movement on stop facing direction
 
 	move_and_slide()
