@@ -3,6 +3,8 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
+@export var char_scale = Vector2(10, 10)
+var scale_factor = 0.01
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -10,6 +12,14 @@ var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 # twine
 
 func _physics_process(delta):
+	
+	#self.scale = char_scale
+	var scale_increase = (position.y) * scale_factor
+	scale = char_scale + Vector2(scale_increase, scale_increase)
+	
+
+	#1400
+	#800
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var last_direction = velocity
 	# Walking animations

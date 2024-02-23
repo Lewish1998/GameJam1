@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dum5vkgrv6ukg"]
 
-[ext_resource type="Script" path="res://StartPage.gd" id="1_x6qp2"]
+[ext_resource type="Script" path="res://startpage/StartPage.gd" id="1_x6qp2"]
 [ext_resource type="PackedScene" uid="uid://b7m3w4eu8slrv" path="res://Background/BG.tscn" id="2_21ylf"]
 
 [node name="StartPage" type="Node2D"]
