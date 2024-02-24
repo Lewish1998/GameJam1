@@ -14,7 +14,7 @@ var last_direction = Vector2.ZERO
 func _ready():
 	$FootstepPlayer.stop()
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	walking = direction.length() > 0
 

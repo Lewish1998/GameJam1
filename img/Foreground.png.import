@@ -2,18 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-
-uid="uid://c2ypulog4prru"
-
-path="res://.godot/imported/Bathsalts.png-e51a3e300b037a532dcfaa2c4589f676.ctex"
+uid="uid://blu0snelqjp8k"
+path="res://.godot/imported/Foreground.png-14f57c7ed734c07a2f1f29bc1bedf450.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://img/Bathsalts.png"
-dest_files=["res://.godot/imported/Bathsalts.png-e51a3e300b037a532dcfaa2c4589f676.ctex"]
+source_file="res://img/Foreground.png"
+dest_files=["res://.godot/imported/Foreground.png-14f57c7ed734c07a2f1f29bc1bedf450.ctex"]
 
 [params]
 
