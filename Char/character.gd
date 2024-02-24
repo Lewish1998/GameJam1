@@ -4,20 +4,34 @@ extends CharacterBody2D
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 var character_movement = true
+var walking = false
+var playing = false
 #@export var char_scale = Vector2(10, 10)
 #var scale_factor = 0.01
 
 
+#func walk():
+	#if walking == true:
+		#playing = true
+		#if playing:
+			##$FootstepPlayer.play()
+			#print("Playing")
+	#else:
+		#playing = false
+		##$FootstepPlayer.stop()
+		
+func walk():
+	if walking == true and playing == true:
+		print("Walking")
+
+
 func _physics_process(_delta):
-	
-	# PLAYER SCALE 
-	#var scale_increase = (position.y) * scale_factor
-	#scale = char_scale + Vector2(scale_increase, scale_increase)
-	
 
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var last_direction = velocity
 	if character_movement == true:
+
+		
 	# Walking animations
 		if direction:	
 			if direction == Vector2(-1, 0):
@@ -31,14 +45,13 @@ func _physics_process(_delta):
 			
 			velocity = direction * SPEED
 			
-				
-			
-		#if direction:
-			# movement
-			#velocity = direction * SPEED
-
+			if velocity:
+				walking = true
+				playing = true
 
 		else:
+			walking = false
+			playing = false
 			if last_direction == Vector2(-300, 0):
 				$AnimatedSprite2D.play("idle left")
 			if last_direction == Vector2(300, 0):
@@ -51,6 +64,6 @@ func _physics_process(_delta):
 			velocity.x = move_toward(velocity.x, 0, SPEED)
 			velocity.y = move_toward(velocity.y, 0, SPEED)
 
-			# TODO play idle movement on stop facing direction
-
 		move_and_slide()
+
+		walk()

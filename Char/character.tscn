@@ -1,8 +1,9 @@
-[gd_scene load_steps=54 format=3 uid="uid://cfsa3a5ati2ko"]
+[gd_scene load_steps=55 format=3 uid="uid://cfsa3a5ati2ko"]
 
 [ext_resource type="Script" path="res://Char/character.gd" id="1_v35di"]
 [ext_resource type="Texture2D" uid="uid://ddd4meb5ugs1i" path="res://Char/img/idle.png" id="2_so3kr"]
 [ext_resource type="Texture2D" uid="uid://b8s2ee23n8pgw" path="res://Char/img/walk.png" id="3_ukm6n"]
+[ext_resource type="AudioStream" uid="uid://boinkicgs00ss" path="res://SoundEffects/Walking.mp3" id="4_x8aor"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n6lug"]
 atlas = ExtResource("2_so3kr")
@@ -401,3 +402,6 @@ shape = SubResource("RectangleShape2D_1dth6")
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = 0
 limit_top = 0
+
+[node name="FootstepPlayer" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_x8aor")
