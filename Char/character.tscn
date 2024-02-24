@@ -403,6 +403,8 @@ shape = SubResource("RectangleShape2D_1dth6")
 [node name="Camera2D" type="Camera2D" parent="."]
 limit_left = 0
 limit_top = 0
+limit_right = 2850
+limit_bottom = 2100
 
 [node name="FootstepPlayer" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_x8aor")
