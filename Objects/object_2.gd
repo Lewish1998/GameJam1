@@ -24,14 +24,15 @@ func _process(_delta):
 			action_pressed += 1
 			
 			GameObjects.num_objects += 1
-			$DialogBox.show_dialog("A yellow thing!")
-			 
+			$DialogBox.show_dialog("Ooohhh, bath salts. That reminds me of that yellow thing which has something to do with bath salts.")
+
+			
 		if Input.is_action_just_pressed("Interact") and action_pressed == 1: # press button to progress not working
 			action_pressed += 1
 			var tween = get_tree().create_tween()
 			var tween1 = get_tree().create_tween()
-			tween.tween_property(self, "position", position - Vector2(0,30), 1)
-			tween1.tween_property(self, "modulate:a", 0, 1)
+			tween.tween_property(self, "position", position - Vector2(0,30), 2)
+			tween1.tween_property(self, "modulate:a", 0, 2)
 		
 			tween.tween_callback(queue_free)
 

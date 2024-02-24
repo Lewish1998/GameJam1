@@ -19,7 +19,9 @@ func _process(delta):
 	if GameObjects.num_objects >= 3:
 		print("Next room")
 		GameObjects.num_objects = 0
-		get_tree().change_scene_to_file("res://startpage/start_page.tscn")
+		GameObjects.current_room = "Pond"
+		get_tree().change_scene_to_file("res://room2/room_2.tscn")
+		
 		# show text box 
 		# show the duck ?
 		# wait for plater input

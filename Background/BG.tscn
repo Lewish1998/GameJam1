@@ -15,7 +15,6 @@ motion_mirroring = Vector2(1920, 0)
 position = Vector2(960, 540)
 scale = Vector2(6, 6)
 texture = ExtResource("1_vaj6h")
-metadata/_edit_lock_ = true
 
 [node name="ParallaxLayer2" type="ParallaxLayer" parent="."]
 motion_scale = Vector2(1.5, 1.5)
