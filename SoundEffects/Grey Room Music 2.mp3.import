@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d21aqj5q52gkq"
+path="res://.godot/imported/Grey Room Music 2.mp3-6d2b4ab643f14ed9617cc6864a9a943e.mp3str"
+
+[deps]
+
+source_file="res://SoundEffects/Grey Room Music 2.mp3"
+dest_files=["res://.godot/imported/Grey Room Music 2.mp3-6d2b4ab643f14ed9617cc6864a9a943e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

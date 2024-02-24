@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://favy6128ix6t"]
+[gd_scene load_steps=9 format=3 uid="uid://favy6128ix6t"]
 
 [ext_resource type="Script" path="res://room1/room_1.gd" id="1_4iwe5"]
 [ext_resource type="PackedScene" uid="uid://cfsa3a5ati2ko" path="res://Char/character.tscn" id="1_wmo41"]
 [ext_resource type="PackedScene" uid="uid://cfv7sp26qivla" path="res://Objects/object.tscn" id="3_j1v3w"]
+[ext_resource type="PackedScene" uid="uid://bp7kk1271xqr3" path="res://Objects/object_2.tscn" id="4_tl4h7"]
 [ext_resource type="PackedScene" uid="uid://cjdl4yslfc2un" path="res://UI/ui.tscn" id="5_yfrgx"]
 [ext_resource type="Texture2D" uid="uid://yhguglfuwmhf" path="res://img/Scene1withwindow.png" id="6_lmgu6"]
 
@@ -27,8 +28,11 @@ texture = ExtResource("6_lmgu6")
 [node name="Object" parent="." instance=ExtResource("3_j1v3w")]
 position = Vector2(1976, 872)
 
-[node name="Object2" parent="." instance=ExtResource("3_j1v3w")]
-position = Vector2(365, 1172)
+[node name="Object3" parent="." instance=ExtResource("3_j1v3w")]
+position = Vector2(2238, 1917)
+
+[node name="Object2" parent="." instance=ExtResource("4_tl4h7")]
+position = Vector2(11, 1422)
 
 [node name="Character" parent="." instance=ExtResource("1_wmo41")]
 position = Vector2(972, 1267)

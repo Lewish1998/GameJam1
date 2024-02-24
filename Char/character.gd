@@ -9,28 +9,11 @@ var playing = false
 #@export var char_scale = Vector2(10, 10)
 #var scale_factor = 0.01
 
-
-#func walk():
-	#if walking == true:
-		#playing = true
-		#if playing:
-			##$FootstepPlayer.play()
-			#print("Playing")
-	#else:
-		#playing = false
-		##$FootstepPlayer.stop()
-		
-func walk():
-	if walking == true and playing == true:
-		print("Walking")
-
-
 func _physics_process(_delta):
 
 	var direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	var last_direction = velocity
 	if character_movement == true:
-
 		
 	# Walking animations
 		if direction:	
@@ -44,14 +27,8 @@ func _physics_process(_delta):
 				$AnimatedSprite2D.play("walk front")
 			
 			velocity = direction * SPEED
-			
-			if velocity:
-				walking = true
-				playing = true
 
 		else:
-			walking = false
-			playing = false
 			if last_direction == Vector2(-300, 0):
 				$AnimatedSprite2D.play("idle left")
 			if last_direction == Vector2(300, 0):
@@ -65,5 +42,3 @@ func _physics_process(_delta):
 			velocity.y = move_toward(velocity.y, 0, SPEED)
 
 		move_and_slide()
-
-		walk()
