@@ -13,6 +13,8 @@ func _process(_delta):
 	if is_entered:
 		if Input.is_action_just_pressed("Interact"):
 			print("interacted")
+			
+			GameObjects.num_objects += 1
 
 			var tween = get_tree().create_tween()
 			var tween1 = get_tree().create_tween()
