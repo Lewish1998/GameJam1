@@ -1,27 +1,26 @@
-
-[gd_scene load_steps=14 format=3 uid="uid://favy6128ix6t"]
-
+[gd_scene load_steps=13 format=3 uid="uid://favy6128ix6t"]
 
 [ext_resource type="Script" path="res://room1/room_1.gd" id="1_4iwe5"]
 [ext_resource type="PackedScene" uid="uid://cfsa3a5ati2ko" path="res://Char/character.tscn" id="1_wmo41"]
-[ext_resource type="Script" path="res://room1/ParallaxBackground.gd" id="2_xin4m"]
+[ext_resource type="Shader" path="res://room1/room_1.gdshader" id="2_d2xk5"]
 [ext_resource type="Texture2D" uid="uid://dpmt75hdd848k" path="res://img/Rain.png" id="3_f7ohq"]
-[ext_resource type="PackedScene" uid="uid://cfv7sp26qivla" path="res://Objects/object.tscn" id="3_j1v3w"]
-[ext_resource type="PackedScene" uid="uid://lbluhe3n07ev" path="res://Objects/book.tscn" id="4_kip7i"]
-[ext_resource type="Texture2D" uid="uid://dqjj56b5vg5ix" path="res://img/Scene1redraw1.png" id="4_stq2l"]
-[ext_resource type="PackedScene" uid="uid://d0vsjrbuvi7x2" path="res://Objects/object_2.tscn" id="4_tl4h7"]
+[ext_resource type="Texture2D" uid="uid://38p2jhsmmkit" path="res://img/Scene1_draft2.png" id="4_dddlr"]
+[ext_resource type="PackedScene" uid="uid://cfv7sp26qivla" path="res://Objects/object.tscn" id="4_tl4h7"]
 [ext_resource type="PackedScene" uid="uid://cjdl4yslfc2un" path="res://UI/ui.tscn" id="5_yfrgx"]
 [ext_resource type="Texture2D" uid="uid://cyvynfbu07vn0" path="res://img/Scene1foreground.png" id="10_aapjk"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_46bru"]
+shader = ExtResource("2_d2xk5")
+
 [sub_resource type="Gradient" id="Gradient_ofryr"]
-offsets = PackedFloat32Array(0, 0.0144404, 0.99639, 1)
-colors = PackedColorArray(1, 1, 1, 1, 0.955279, 0.955279, 0.955279, 1, 0.0505415, 0.0505415, 0.0505415, 1, 0, 0, 0, 1)
+offsets = PackedFloat32Array(0.184874, 0.256303, 0.752101, 1)
+colors = PackedColorArray(0.955279, 0.955279, 0.955279, 1, 0.703808, 0.703808, 0.703808, 1, 0.246588, 0.246588, 0.246588, 1, 0.105614, 0.105614, 0.105614, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_it0hq"]
 gradient = SubResource("Gradient_ofryr")
 fill = 1
-fill_from = Vector2(0.469136, 0.358025)
-fill_to = Vector2(0.390123, 0.837037)
+fill_from = Vector2(0.478142, 0.150273)
+fill_to = Vector2(0.644809, 0.871585)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pdr0t"]
 size = Vector2(85, 3312.75)
@@ -29,49 +28,40 @@ size = Vector2(85, 3312.75)
 [node name="Room1" type="Node2D"]
 script = ExtResource("1_4iwe5")
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-script = ExtResource("2_xin4m")
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_scale = Vector2(2, 2)
-motion_mirroring = Vector2(640, 640)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(876, -351)
+[node name="Rain" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_46bru")
+position = Vector2(1116, 302)
 texture = ExtResource("3_f7ohq")
 
 [node name="BG" type="Sprite2D" parent="."]
-position = Vector2(1309.35, 967.527)
-scale = Vector2(1.64559, 1.74469)
-texture = ExtResource("4_stq2l")
+position = Vector2(1208, 874)
+scale = Vector2(1.24128, 1.3127)
+texture = ExtResource("4_dddlr")
 
-[node name="Object" parent="." instance=ExtResource("3_j1v3w")]
-position = Vector2(334, 1137)
-scale = Vector2(0.703518, 0.703518)
+[node name="Object" parent="." instance=ExtResource("4_tl4h7")]
+position = Vector2(385, 999)
+rotation = -0.0767945
+scale = Vector2(1.19832, 1.18987)
 
-[node name="Book" parent="." instance=ExtResource("4_kip7i")]
-position = Vector2(2461, 1645)
+[node name="Book" parent="." instance=ExtResource("4_tl4h7")]
+position = Vector2(1931, 1071)
 rotation = -0.539307
 scale = Vector2(0.662673, 0.662673)
 
-[node name="Object2" parent="." instance=ExtResource("4_tl4h7")]
-position = Vector2(2075, 1005)
-scale = Vector2(0.359743, 0.359743)
-
 [node name="Character" parent="." instance=ExtResource("1_wmo41")]
-position = Vector2(1263, 1151)
-scale = Vector2(5, 5)
+position = Vector2(1243, 882)
+scale = Vector2(10, 10)
 
 [node name="UI" parent="." instance=ExtResource("5_yfrgx")]
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(1311.5, 961)
-scale = Vector2(40.9844, 29.8125)
+position = Vector2(1222.75, 787.5)
+scale = Vector2(40.5391, 37.6719)
 energy = 1.39
+blend_mode = 2
 shadow_enabled = true
 shadow_color = Color(0, 0, 0, 1)
 texture = SubResource("GradientTexture2D_it0hq")
-metadata/_edit_lock_ = true
 
 [node name="Area2D" type="StaticBody2D" parent="."]
 
@@ -84,30 +74,30 @@ position = Vector2(-47, 1012)
 shape = SubResource("RectangleShape2D_pdr0t")
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(60, 1042)
-rotation = 0.996583
+position = Vector2(-200, 1330)
+rotation = 0.781907
 shape = SubResource("RectangleShape2D_pdr0t")
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1262, 771)
+position = Vector2(1249, 542)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_pdr0t")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(1349.62, 2127)
+position = Vector2(1350, 1782)
 rotation = 1.5708
 shape = SubResource("RectangleShape2D_pdr0t")
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(2302, 932)
-rotation = 2.19213
+position = Vector2(2430, 1097)
+rotation = 2.33176
 shape = SubResource("RectangleShape2D_pdr0t")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(2902, 922)
+position = Vector2(2446, 879)
 shape = SubResource("RectangleShape2D_pdr0t")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1571, 1221)
+position = Vector2(1061, 968)
 scale = Vector2(1.41823, 1.3529)
 texture = ExtResource("10_aapjk")

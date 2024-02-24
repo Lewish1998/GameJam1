@@ -1,4 +1,7 @@
+PointLight2D
 Sprite2D
+AnimatedSprite2D
+Node2D
 ParallaxLayer
 ParallaxBackground
 Camera2D

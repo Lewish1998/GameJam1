@@ -1,9 +1,7 @@
-res://room1/room_1.tscn
 res://Objects/book.tscn
-res://Objects/object.tscn
-res://Objects/object_2.tscn
 res://Char/character.tscn
-res://Char/character.gd
-res://room1/ParallaxBackground.gd
+res://Objects/object.tscn
 res://Background/rain.tscn
 res://Background/BG.tscn
+res://room1/room_1.tscn
+res://room1/room_1.gdshader

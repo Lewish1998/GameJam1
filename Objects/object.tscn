@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://clnlybl3b6l01" path="res://UI/DialogBox.tscn" id="3_3hi4n"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5ywom"]
-radius = 127.68
-height = 403.191
+radius = 120.855
+height = 270.829
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sd85v"]
 radius = 220.0
@@ -16,11 +16,11 @@ height = 482.0
 script = ExtResource("1_ii3ao")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = -0.0767945
 texture = ExtResource("2_2hvyn")
-metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-49, 58)
+position = Vector2(-9, 77)
 rotation = -14.8737
 shape = SubResource("CapsuleShape2D_5ywom")
 
