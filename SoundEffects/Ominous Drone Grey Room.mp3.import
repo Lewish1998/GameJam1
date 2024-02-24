@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://3auo26ne4glw"
+path="res://.godot/imported/Ominous Drone Grey Room.mp3-b3604a8ec0c726e5720185d98de0f118.mp3str"
+
+[deps]
+
+source_file="res://SoundEffects/Ominous Drone Grey Room.mp3"
+dest_files=["res://.godot/imported/Ominous Drone Grey Room.mp3-b3604a8ec0c726e5720185d98de0f118.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

@@ -25,7 +25,10 @@ scale = Vector2(1.64559, 1.74469)
 texture = ExtResource("6_lmgu6")
 
 [node name="Object" parent="." instance=ExtResource("3_j1v3w")]
-position = Vector2(1560, 943)
+position = Vector2(1976, 872)
+
+[node name="Object2" parent="." instance=ExtResource("3_j1v3w")]
+position = Vector2(365, 1172)
 
 [node name="Character" parent="." instance=ExtResource("1_wmo41")]
 position = Vector2(972, 1267)
@@ -39,3 +42,4 @@ energy = 1.39
 shadow_enabled = true
 shadow_color = Color(0, 0, 0, 1)
 texture = SubResource("GradientTexture2D_it0hq")
+metadata/_edit_lock_ = true
