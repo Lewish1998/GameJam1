@@ -15,6 +15,10 @@ func _ready():
 func _process(delta):
 	var my_random_number = rng.randf_range(0.0, 1.7)
 	$PointLight2D.energy = lerp($PointLight2D.energy, my_random_number, flicker*delta)
-
-
+	
+	#if GameObjects.num_objects >= 3:
+		# show text box 
+		# show the duck ?
+		# wait for plater input
+		# transition to next scene
 
