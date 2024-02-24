@@ -1,6 +1,7 @@
-Camera2D
+Sprite2D
 ParallaxLayer
 ParallaxBackground
+Camera2D
 CanvasLayer
 Button
 RichTextLabel
