@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://bfdouvkhyv1ch"]
+[gd_scene load_steps=11 format=3 uid="uid://bfdouvkhyv1ch"]
 
 [ext_resource type="Script" path="res://room1/room_1.gd" id="1_854r2"]
-[ext_resource type="Texture2D" uid="uid://dinhblvhavu7x" path="res://img/Scene2draft1.png" id="2_684tw"]
+[ext_resource type="Texture2D" uid="uid://ueksllonr3qi" path="res://img/Scene2yellow.png" id="2_g2x8t"]
 [ext_resource type="PackedScene" uid="uid://cfv7sp26qivla" path="res://Objects/object.tscn" id="3_mc6t4"]
 [ext_resource type="PackedScene" uid="uid://cfsa3a5ati2ko" path="res://Char/character.tscn" id="4_ewuvv"]
 [ext_resource type="PackedScene" uid="uid://cjdl4yslfc2un" path="res://UI/ui.tscn" id="5_2dnq8"]
@@ -14,16 +14,23 @@ colors = PackedColorArray(1, 1, 1, 1, 0.955279, 0.955279, 0.955279, 1, 0.0505415
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_it0hq"]
 gradient = SubResource("Gradient_ofryr")
 fill = 1
-fill_from = Vector2(0.469136, 0.358025)
-fill_to = Vector2(0.390123, 0.837037)
+fill_from = Vector2(1, 0)
+fill_to = Vector2(0.245726, 0.745726)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l0gbp"]
+size = Vector2(1083.82, 67)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jap5x"]
+radius = 204.908
+height = 1120.44
 
 [node name="Room2" type="Node2D"]
 script = ExtResource("1_854r2")
 
 [node name="BG" type="Sprite2D" parent="."]
-position = Vector2(1309.35, 967.527)
+position = Vector2(1551, 1130)
 scale = Vector2(1.64559, 1.74469)
-texture = ExtResource("2_684tw")
+texture = ExtResource("2_g2x8t")
 
 [node name="Object" parent="." instance=ExtResource("3_mc6t4")]
 position = Vector2(1976, 872)
@@ -31,21 +38,85 @@ position = Vector2(1976, 872)
 [node name="Object2" parent="." instance=ExtResource("3_mc6t4")]
 position = Vector2(365, 1172)
 
-[node name="Character" parent="." instance=ExtResource("4_ewuvv")]
-position = Vector2(972, 1267)
-
 [node name="UI" parent="." instance=ExtResource("5_2dnq8")]
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(1311.5, 961)
-scale = Vector2(40.9844, 29.8125)
-energy = 1.39
+position = Vector2(1554, 1116.5)
+scale = Vector2(49.7812, 35.6094)
+energy = 0.56
 shadow_enabled = true
 shadow_color = Color(0, 0, 0, 1)
 texture = SubResource("GradientTexture2D_it0hq")
-metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(1307.5, 959)
+position = Vector2(1554, 1139)
 scale = Vector2(1.65573, 1.76067)
 texture = ExtResource("6_yp6ce")
+
+[node name="Character" parent="." instance=ExtResource("4_ewuvv")]
+position = Vector2(564, 1685)
+scale = Vector2(5, 5.03837)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1249, 684)
+rotation = 0.174533
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(337, 954)
+rotation = 0.593412
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D9" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-30, 1212)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D10" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-40, 1863)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2884, 1766)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D12" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2888, 1279)
+rotation = 1.5708
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1196, 879)
+rotation = -0.705113
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2338, 780)
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3140, 778)
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(2617, 2129)
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1536, 2122)
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(458, 2129)
+shape = SubResource("RectangleShape2D_l0gbp")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(1676, 1506)
+rotation = 1.49924
+shape = SubResource("CapsuleShape2D_jap5x")
