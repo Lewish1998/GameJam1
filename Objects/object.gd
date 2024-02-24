@@ -8,6 +8,7 @@ var action_pressed = 0
 
 func _on_area_2d_body_entered(body):
 	if body.name == "Character":
+		print("Char entered")
 		$DialogBox.show_dialog("Press 'E' to open")
 		
 		is_entered = true

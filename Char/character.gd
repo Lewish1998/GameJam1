@@ -35,6 +35,7 @@ func _physics_process(delta):
 
 	# Apply movement
 	move_and_slide()
+	
 
 func handle_walking(direction: Vector2):
 	var anim = get_animation_from_direction(direction)
@@ -42,8 +43,6 @@ func handle_walking(direction: Vector2):
 		$AnimatedSprite2D.play(anim)
 
 func handle_idle():
-	print("sdfgsdg")
-	print(last_direction)
 	if last_direction == Vector2(-1, 0):
 		$AnimatedSprite2D.play("idle left")
 	if last_direction == Vector2(1, 0):
@@ -74,7 +73,6 @@ func get_animation_from_direction(direction: Vector2) -> String:
 			$AnimatedSprite2D.play("walk back")
 		if direction == Vector2(0, 1):
 			$AnimatedSprite2D.play("walk front")
-			
 		
 	return ""
 
