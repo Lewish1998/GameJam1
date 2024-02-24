@@ -1,3 +1,6 @@
-res://startpage/start_page.tscn
 res://room1/room_1.tscn
+res://Objects/book.tscn
+res://Objects/object.tscn
+res://Objects/object_2.tscn
+res://Char/character.tscn
 res://Char/character.gd

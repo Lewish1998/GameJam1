@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://bp7kk1271xqr3"]
+[gd_scene load_steps=6 format=3 uid="uid://d0vsjrbuvi7x2"]
 
 [ext_resource type="Script" path="res://Objects/object_2.gd" id="1_ixkgk"]
-[ext_resource type="Texture2D" uid="uid://ewno8fsy0h3q" path="res://img/Trunk.png" id="2_piom0"]
+[ext_resource type="Texture2D" uid="uid://c2ypulog4prru" path="res://img/Bathsalts.png" id="2_kgtk2"]
 [ext_resource type="PackedScene" uid="uid://clnlybl3b6l01" path="res://UI/DialogBox.tscn" id="3_n7jpq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tqpc6"]
@@ -20,8 +20,7 @@ shape = SubResource("RectangleShape2D_tqpc6")
 metadata/_edit_lock_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.279, 0.443)
-texture = ExtResource("2_piom0")
+texture = ExtResource("2_kgtk2")
 metadata/_edit_lock_ = true
 
 [node name="Area2D" type="Area2D" parent="."]
