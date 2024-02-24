@@ -1,14 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://favy6128ix6t"]
+[gd_scene load_steps=5 format=3 uid="uid://favy6128ix6t"]
 
-[ext_resource type="Texture2D" uid="uid://d2abcrxyebju1" path="res://img/Scene1.png" id="1_loewr"]
+[ext_resource type="Script" path="res://room1/room_1.gd" id="1_4iwe5"]
 [ext_resource type="PackedScene" uid="uid://cfsa3a5ati2ko" path="res://Char/character.tscn" id="1_wmo41"]
+[ext_resource type="Texture2D" uid="uid://0tnc1dx8p482" path="res://img/attic.jpeg" id="2_tb5mo"]
+[ext_resource type="PackedScene" uid="uid://cfv7sp26qivla" path="res://Objects/object.tscn" id="3_j1v3w"]
 
 [node name="Room1" type="Node2D"]
+script = ExtResource("1_4iwe5")
 
 [node name="Scene1" type="Sprite2D" parent="."]
-position = Vector2(1681, 538.5)
-scale = Vector2(1.74271, 0.991667)
-texture = ExtResource("1_loewr")
+position = Vector2(1309.35, 967.527)
+scale = Vector2(1.64559, 1.74469)
+texture = ExtResource("2_tb5mo")
+
+[node name="Object" parent="." instance=ExtResource("3_j1v3w")]
+position = Vector2(1560, 943)
 
 [node name="Character" parent="." instance=ExtResource("1_wmo41")]
-position = Vector2(810, 743)
+position = Vector2(972, 1267)

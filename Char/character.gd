@@ -3,19 +3,19 @@ extends CharacterBody2D
 
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
-@export var char_scale = Vector2(10, 10)
-var scale_factor = 0.01
+#@export var char_scale = Vector2(10, 10)
+#var scale_factor = 0.01
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 # twine
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	
-	#self.scale = char_scale
-	var scale_increase = (position.y) * scale_factor
-	scale = char_scale + Vector2(scale_increase, scale_increase)
+	# PLAYER SCALE 
+	#var scale_increase = (position.y) * scale_factor
+	#scale = char_scale + Vector2(scale_increase, scale_increase)
 	
 
 	#1400
