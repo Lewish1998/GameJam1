@@ -77,3 +77,4 @@ func get_animation_from_direction(direction: Vector2) -> String:
 			
 		
 	return ""
+

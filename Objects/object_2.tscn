@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bp7kk1271xqr3"]
+
+[ext_resource type="Script" path="res://Objects/object_2.gd" id="1_ixkgk"]
+[ext_resource type="Texture2D" uid="uid://ewno8fsy0h3q" path="res://img/Trunk.png" id="2_piom0"]
+[ext_resource type="PackedScene" uid="uid://clnlybl3b6l01" path="res://UI/DialogBox.tscn" id="3_n7jpq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tqpc6"]
+size = Vector2(106, 194)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sd85v"]
+radius = 79.0
+height = 250.0
+
+[node name="Object2" type="StaticBody2D"]
+script = ExtResource("1_ixkgk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_tqpc6")
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.279, 0.443)
+texture = ExtResource("2_piom0")
+metadata/_edit_lock_ = true
+
+[node name="Area2D" type="Area2D" parent="."]
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_sd85v")
+metadata/_edit_lock_ = true
+
+[node name="DialogBox" parent="." instance=ExtResource("3_n7jpq")]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
