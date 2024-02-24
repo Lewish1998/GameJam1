@@ -7,12 +7,19 @@ func _on_area_2d_body_entered(body):
 		$DialogBox.show_dialog("Testing text")
 		
 		is_entered = true
+		
+func _on_area_2d_body_exited(body):
+	if body.name == "Character":
+		$DialogBox.hide()
+		is_entered = false
 
 
 func _process(_delta):
 	if is_entered:
 		if Input.is_action_just_pressed("Interact"):
 			print("interacted")
+			
+			GameObjects.num_objects += 1
 
 			var tween = get_tree().create_tween()
 			var tween1 = get_tree().create_tween()
@@ -20,4 +27,5 @@ func _process(_delta):
 			tween1.tween_property(self, "modulate:a", 0, 0.3)
 		
 			tween.tween_callback(queue_free)
+
 

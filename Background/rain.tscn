@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://oerb68cqctsq"]
+
+[ext_resource type="Script" path="res://Rain.gd" id="1_4jg1n"]
+[ext_resource type="Texture2D" uid="uid://dh3ec025s1ti0" path="res://img/rain.jpeg" id="2_djd3q"]
+
+[node name="Rain" type="ParallaxBackground"]
+script = ExtResource("1_4jg1n")
+
+[node name="ParallaxLayer1" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(2, 2)
+motion_mirroring = Vector2(200, 300)
+
+[node name="rain" type="Sprite2D" parent="ParallaxLayer1"]
+position = Vector2(937, 310)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_djd3q")

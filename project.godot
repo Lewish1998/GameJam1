@@ -11,8 +11,12 @@ config_version=5
 [application]
 
 config/name="GameJam"
-run/main_scene="res://startpage/start_page.tscn"
+run/main_scene="res://room1/room_1.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
+
+[autoload]
+
+GameObjects="*res://Global/GameObjects.gd"
 
 [display]
 
