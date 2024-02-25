@@ -1,20 +1,26 @@
-[gd_scene load_steps=3 format=3 uid="uid://dum5vkgrv6ukg"]
+[gd_scene load_steps=4 format=3 uid="uid://dum5vkgrv6ukg"]
 
 [ext_resource type="Script" path="res://startpage/StartPage.gd" id="1_x6qp2"]
 [ext_resource type="PackedScene" uid="uid://b7m3w4eu8slrv" path="res://Background/BG.tscn" id="2_21ylf"]
+[ext_resource type="Texture2D" uid="uid://cep11544dtokl" path="res://StartScreen.png" id="3_78ueo"]
 
 [node name="StartPage" type="Node2D"]
 script = ExtResource("1_x6qp2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(975, 547)
+texture = ExtResource("3_78ueo")
 
 [node name="Start" type="Button" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 852.0
+offset_left = 884.0
 offset_top = 307.0
-offset_right = 1074.0
+offset_right = 1106.0
 offset_bottom = 421.0
 grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
 text = "Start
 "
 
@@ -22,11 +28,12 @@ text = "Start
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 854.0
+offset_left = 886.0
 offset_top = 483.0
-offset_right = 1076.0
+offset_right = 1108.0
 offset_bottom = 597.0
 grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
 text = "How to play
 "
 
@@ -34,17 +41,16 @@ text = "How to play
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 851.0
+offset_left = 883.0
 offset_top = 665.0
-offset_right = 1073.0
+offset_right = 1105.0
 offset_bottom = 779.0
 grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
 text = "Quit"
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_21ylf")]
 visible = false
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Howtoplay" to="." method="_on_howtoplay_pressed"]

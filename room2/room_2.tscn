@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bfdouvkhyv1ch"]
+[gd_scene load_steps=14 format=3 uid="uid://bfdouvkhyv1ch"]
 
 [ext_resource type="Script" path="res://room2/room_2.gd" id="1_oib4v"]
 [ext_resource type="Texture2D" uid="uid://ueksllonr3qi" path="res://img/Scene2yellow.png" id="2_g2x8t"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://cjdl4yslfc2un" path="res://UI/ui.tscn" id="5_2dnq8"]
 [ext_resource type="PackedScene" uid="uid://nl1fp0g2yaxy" path="res://Objects/Bandaid.tscn" id="5_pdwn8"]
 [ext_resource type="Texture2D" uid="uid://blu0snelqjp8k" path="res://img/Foreground.png" id="6_yp6ce"]
+[ext_resource type="PackedScene" uid="uid://cyc6d2q34qvwq" path="res://transitionscript.tscn" id="9_s6pg7"]
 
 [sub_resource type="Gradient" id="Gradient_ofryr"]
 offsets = PackedFloat32Array(0, 0.0144404, 0.99639, 1)
@@ -132,3 +133,5 @@ shape = SubResource("RectangleShape2D_l0gbp")
 position = Vector2(1692, 1530)
 rotation = 1.49924
 shape = SubResource("CapsuleShape2D_jap5x")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("9_s6pg7")]

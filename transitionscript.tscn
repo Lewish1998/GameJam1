@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyc6d2q34qvwq"]
+
+[ext_resource type="Script" path="res://CanvasLayer.gd" id="1_ekvid"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_ekvid")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 426.0
+offset_top = 310.0
+offset_right = 1518.0
+offset_bottom = 785.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 526.0
+offset_top = 382.0
+offset_right = 1429.0
+offset_bottom = 739.0
+theme_override_font_sizes/font_size = 30
+text = "My yellow rubber duck! Professor Induckia Quones - he was the best companion for my stories. I didn’t get to travel very far but we still had many adventures.
+
+The bath was my favourite place to be on a terrible day - I could spend hours reading in a warm bath....Mum’s bathroom had the best view
+
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3

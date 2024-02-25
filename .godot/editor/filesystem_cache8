@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1708867934
+::res://::1708870092
 background_layer_1.png::CompressedTexture2D::8688668305204087098::1708773113::1708773132::1::::<><>::
 background_layer_2.png::CompressedTexture2D::7583644443795581897::1708773113::1708773132::1::::<><>::
 background_layer_3.png::CompressedTexture2D::4747755359719525272::1708773113::1708773132::1::::<><>::
@@ -8,6 +8,7 @@ icon.svg::CompressedTexture2D::8343095658532216360::1708773113::1708773113::1:::
 Node2D.gd::GDScript::-1::1708792424::0::1::::<>Node2D<>::
 Rain.gd::GDScript::-1::1708792424::0::1::::<>ParallaxBackground<>::
 StartPage.gd::GDScript::-1::1708773113::0::1::::<>Node2D<>::
+StartScreen.png::CompressedTexture2D::5086189102524915647::1708870092::1708870093::1::::<><>::
 Trunk.png::CompressedTexture2D::4952137892878515273::1708801214::1708801214::1::::<><>::
 ::res://Background/::1708855929
 background_layer_1.png::CompressedTexture2D::8688668305204087098::1708773113::1708773132::1::::<><>::
@@ -26,21 +27,21 @@ idle.png::CompressedTexture2D::8838453147166395695::1708802901::1708802901::1:::
 jump.png::CompressedTexture2D::7386831703357695740::1708773113::1708773132::1::::<><>::
 run.png::CompressedTexture2D::9126899309355541838::1708773113::1708773132::1::::<><>::
 walk.png::CompressedTexture2D::7064625465210806542::1708859330::1708859331::1::::<><>::
-::res://Global/::1708792448
-GameObjects.gd::GDScript::-1::1708792424::0::1::::<>Node<>::
-::res://howtoplay/::1708792442
+::res://Global/::1708868192
+GameObjects.gd::GDScript::-1::1708868185::0::1::::<>Node<>::
+::res://howtoplay/::1708869682
 how_to_play.gd::GDScript::-1::1708773113::0::1::::<>Node2D<>::
 how_to_play.tscn::PackedScene::5188055119370296586::1708792425::0::1::::<><>::res://howtoplay/how_to_play.gd
-::res://img/::1708867053
-Band Aid.png::CompressedTexture2D::668207023797528377::1708867050::1708867050::1::::<><>::
+::res://img/::1708868221
+Band Aid.png::CompressedTexture2D::668207023797528377::1708868185::1708868185::1::::<><>::
 Bathsalts.png::CompressedTexture2D::6718432282176195490::1708800845::1708804566::1::::<><>::
 Book.png::CompressedTexture2D::3671632592986482713::1708801409::1708804566::1::::<><>::
-Broken Phone.png::CompressedTexture2D::466658484716212858::1708866729::1708866730::1::::<><>::
-Coins .png::CompressedTexture2D::333289673299635038::1708866305::1708866306::1::::<><>::
+Broken Phone.png::CompressedTexture2D::466658484716212858::1708868185::1708868221::1::::<><>::
+Coins .png::CompressedTexture2D::333289673299635038::1708868185::1708868185::1::::<><>::
 duck.png::CompressedTexture2D::680705218215087790::1708859650::1708859650::1::::<><>::
 Foreground.png::CompressedTexture2D::3201336277406415312::1708804566::1708804568::1::::<><>::
 foundDuck.png::CompressedTexture2D::5750516351166704661::1708860171::1708860172::1::::<><>::
-Mitt.png::CompressedTexture2D::3070315702568527676::1708866873::1708866873::1::::<><>::
+Mitt.png::CompressedTexture2D::3070315702568527676::1708868185::1708868185::1::::<><>::
 Rain.png::CompressedTexture2D::8238079593621807928::1708807955::1708807955::1::::<><>::
 Scene1foreground.png::CompressedTexture2D::6502206235786347895::1708807955::1708807955::1::::<><>::
 Scene1redraw1.png::CompressedTexture2D::8301464606986459807::1708807955::1708807955::1::::<><>::
@@ -52,49 +53,50 @@ starwars.jpeg::CompressedTexture2D::1325889799517498717::1708804566::1708804568:
 Trunk.png::CompressedTexture2D::1235863785206519994::1708801234::1708801235::1::::<><>::
 Trunknew.png::CompressedTexture2D::7674286702524627072::1708859079::1708859089::1::::<><>::
 Trunkwithp.png::CompressedTexture2D::1778959702367400933::1708807955::1708807955::1::::<><>::
-::res://Objects/::1708867902
+::res://Objects/::1708869671
 Bannister.gd::GDScript::-1::1708866193::0::1::::<>Node2D<>::
 Bannister.tscn::PackedScene::8373854513938062417::1708865466::0::1::::<><>::uid://clnlybl3b6l01::::res://UI/DialogBox.tscn<>res://Objects/Bannister.gd
-bathsalts.gd::GDScript::-1::1708863562::0::1::::<>StaticBody2D<>::
+bathsalts.gd::GDScript::-1::1708869671::0::1::::<>StaticBody2D<>::
 bathsalts.tscn::PackedScene::1095308486424151556::1708867443::0::1::::<><>::res://Objects/bathsalts.gd<>uid://c2ypulog4prru::::res://img/Bathsalts.png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
-Book.gd::GDScript::-1::1708863562::0::1::::<>StaticBody2D<>::
-Book.tscn::PackedScene::8148561411182428175::1708867443::0::1::::<><>::res://Objects/Book.gd<>uid://bsktit0k2fdqv::::res://img/Book.png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
-chest.gd::GDScript::-1::1708863562::0::1::::<>StaticBody2D<>::
+Book.gd::GDScript::-1::1708869671::0::1::::<>StaticBody2D<>::
+Book.tscn::PackedScene::8148561411182428175::1708868185::0::1::::<><>::res://Objects/Book.gd<>uid://bsktit0k2fdqv::::res://img/Book.png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
+chest.gd::GDScript::-1::1708869671::0::1::::<>StaticBody2D<>::
 chest.tscn::PackedScene::5244690990123786344::1708867443::0::1::::<><>::res://Objects/chest.gd<>uid://dhlqm7frwhmgm::::res://img/Trunknew.png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
-Coins.gd::GDScript::-1::1708866471::0::1::::<>StaticBody2D<>::
-Coins.tscn::PackedScene::1291686439801116799::1708867534::0::1::::<><>::res://Objects/Coins.gd<>uid://e0ph5pmv8u43::::res://img/Coins .png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
+Coins.gd::GDScript::-1::1708869671::0::1::::<>StaticBody2D<>::
+Coins.tscn::PackedScene::1291686439801116799::1708868185::0::1::::<><>::res://Objects/Coins.gd<>uid://e0ph5pmv8u43::::res://img/Coins .png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
 duck.png::CompressedTexture2D::48177115859224668::1708859640::1708859640::1::::<><>::
 Duck.tscn::PackedScene::8733564003842547992::1708863455::0::1::::<><>::uid://jx0d6rj0rrso::::res://img/duck.png
-Mitt.gd::GDScript::-1::1708867516::0::1::::<>StaticBody2D<>::
-Mitt.tscn::PackedScene::3775353669037609540::1708867534::0::1::::<><>::res://Objects/Mitt.gd<>uid://bj0jweutvaisi::::res://img/Mitt.png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
-Bandaid.tscn::PackedScene::936751520150531350::1708867534::0::1::::<><>::res://Objects/Bandaid.gd<>uid://jrxjiq42bywv::::res://img/Band Aid.png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
-Bandaid.gd::GDScript::-1::1708867479::0::1::::<>StaticBody2D<>::
-Yellow Room Music.mp3::AudioStreamMP3::6821379388960862508::1708867897::1708867897::1::::<><>::
-::res://room1/::1708867934
-room_1.gd::GDScript::-1::1708867931::0::1::::<>Node2D<>::
-room_1.gdshader::Shader::-1::1708867931::0::1::::<><>::
-room_1.tscn::PackedScene::352263803751942077::1708867931::0::1::::<><>::res://room1/room_1.gd<>uid://cfsa3a5ati2ko::::res://Char/character.tscn<>res://room1/room_1.gdshader<>uid://dpmt75hdd848k::::res://img/Rain.png<>uid://b5ri0vtlklcht::::res://img/Sceneoneredrawfinal1.png<>uid://drkmfpoypwm86::::res://Objects/Bannister.tscn<>uid://cjdl4yslfc2un::::res://UI/ui.tscn<>uid://puttn1s4qx2c::::res://Objects/bathsalts.tscn<>uid://cgytkajcmfalk::::res://Objects/chest.tscn<>uid://dodhu7ahl2nsp::::res://Objects/Book.tscn<>uid://cyvynfbu07vn0::::res://img/Scene1foreground.png<>uid://dnud0ckl5jbwm::::res://UI/Transition.tscn
+Mitt.gd::GDScript::-1::1708869671::0::1::::<>StaticBody2D<>::
+Mitt.tscn::PackedScene::3775353669037609540::1708868185::0::1::::<><>::res://Objects/Mitt.gd<>uid://bj0jweutvaisi::::res://img/Mitt.png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
+Bandaid.tscn::PackedScene::936751520150531350::1708868185::0::1::::<><>::res://Objects/Bandaid.gd<>uid://jrxjiq42bywv::::res://img/Band Aid.png<>uid://clnlybl3b6l01::::res://UI/DialogBox.tscn
+Bandaid.gd::GDScript::-1::1708869671::0::1::::<>StaticBody2D<>::
+Yellow Room Music.mp3::AudioStreamMP3::6821379388960862508::1708868185::1708868185::1::::<><>::
+::res://room1/::1708870040
+room_1.gd::GDScript::-1::1708870022::0::1::::<>Node2D<>::
+room_1.gdshader::Shader::-1::1708870040::0::1::::<><>::
+room_1.tscn::PackedScene::352263803751942077::1708870040::0::1::::<><>::res://room1/room_1.gd<>uid://cfsa3a5ati2ko::::res://Char/character.tscn<>res://room1/room_1.gdshader<>uid://dpmt75hdd848k::::res://img/Rain.png<>uid://b5ri0vtlklcht::::res://img/Sceneoneredrawfinal1.png<>uid://drkmfpoypwm86::::res://Objects/Bannister.tscn<>uid://cjdl4yslfc2un::::res://UI/ui.tscn<>uid://puttn1s4qx2c::::res://Objects/bathsalts.tscn<>uid://cgytkajcmfalk::::res://Objects/chest.tscn<>uid://dodhu7ahl2nsp::::res://Objects/Book.tscn<>uid://cyvynfbu07vn0::::res://img/Scene1foreground.png<>uid://dnud0ckl5jbwm::::res://UI/Transition.tscn
 Scene1_draft2.png::CompressedTexture2D::823365482336839710::1708812032::1708812033::1::::<><>::
-::res://room2/::1708867931
-room_2.tscn::PackedScene::2744444907711643451::1708867931::0::1::::<><>::res://room1/room_1.gd<>uid://ueksllonr3qi::::res://img/Scene2yellow.png<>uid://snx5fkrtkavv::::res://Objects/Coins.tscn<>uid://cfsa3a5ati2ko::::res://Char/character.tscn<>uid://bt12r18qb8kca::::res://Objects/Mitt.tscn<>uid://cjdl4yslfc2un::::res://UI/ui.tscn<>uid://nl1fp0g2yaxy::::res://Objects/Bandaid.tscn<>uid://blu0snelqjp8k::::res://img/Foreground.png
-::res://SoundEffects/::1708868040
+::res://room2/::1708870040
+room_2.gd::GDScript::-1::1708869671::0::1::::<>Node2D<>::
+room_2.tscn::PackedScene::2744444907711643451::1708870040::0::1::::<><>::res://room2/room_2.gd<>uid://ueksllonr3qi::::res://img/Scene2yellow.png<>uid://snx5fkrtkavv::::res://Objects/Coins.tscn<>uid://cfsa3a5ati2ko::::res://Char/character.tscn<>uid://bt12r18qb8kca::::res://Objects/Mitt.tscn<>uid://cjdl4yslfc2un::::res://UI/ui.tscn<>uid://nl1fp0g2yaxy::::res://Objects/Bandaid.tscn<>uid://blu0snelqjp8k::::res://img/Foreground.png
+::res://SoundEffects/::1708868199
 Grey Room Music 2.mp3::AudioStreamMP3::9108063743436619188::1708797531::1708797535::1::::<><>::
-Grey Room music 3 quicker.mp3::AudioStreamMP3::8444954844693284161::1708868040::1708868040::1::::<><>::
+Grey Room music 3 quicker.mp3::AudioStreamMP3::8444954844693284161::1708868185::1708868185::1::::<><>::
 Item Found!.mp3::AudioStreamMP3::4337884247966245816::1708797531::1708797535::1::::<><>::
 Ominous Drone Grey Room.mp3::AudioStreamMP3::1966528429451448364::1708792425::1708792444::1::::<><>::
 Walking.mp3::AudioStreamMP3::3386387119077134338::1708794796::1708811923::1::::<><>::
-Yellow Room Music.mp3::AudioStreamMP3::8923787059578035697::1708867916::1708867917::1::::<><>::
-::res://startpage/::1708804572
-StartPage.gd::GDScript::-1::1708804566::0::1::::<>Node2D<>::
+Yellow Room Music.mp3::AudioStreamMP3::8923787059578035697::1708868185::1708868185::1::::<><>::
+::res://startpage/::1708869682
+StartPage.gd::GDScript::-1::1708869671::0::1::::<>Node2D<>::
 start_page.tscn::PackedScene::8589671003647699986::1708795100::0::1::::<><>::res://startpage/StartPage.gd<>uid://b7m3w4eu8slrv::::res://Background/BG.tscn
 ::res://transition/::1708804576
 transition.gd::GDScript::-1::1708804566::0::1::::<>ParallaxBackground<>::
 transition.tscn::PackedScene::3427489869664439938::1708804566::0::1::::<><>::res://transition/transition.gd<>uid://s5jhgijis66t::::res://img/starwars.jpeg
-::res://UI/::1708867534
+::res://UI/::1708870026
 dialogbox.gd::GDScript::-1::1708865083::0::1::::<>CanvasLayer<>::
 DialogBox.tscn::PackedScene::5572466374972442976::1708865466::0::1::::<><>::res://UI/DialogBox.gd
 Label.gd::GDScript::-1::1708792425::0::1::::<>Label<>::
-Transition.gd::GDScript::-1::1708861172::0::1::::<>RefCounted<>::
-Transition.tscn::PackedScene::8113231490315821316::1708867534::0::1::::<><>::uid://cn6uft0p480q0::::res://img/foundDuck.png
+Transition.gd::GDScript::-1::1708870022::0::1::::<>RefCounted<>::
+Transition.tscn::PackedScene::8113231490315821316::1708868185::0::1::::<><>::uid://cn6uft0p480q0::::res://img/foundDuck.png
 ui.gd::GDScript::-1::1708794796::0::1::::<>CanvasLayer<>::
 ui.tscn::PackedScene::5411455057207810785::1708863455::0::1::::<><>::res://UI/ui.gd

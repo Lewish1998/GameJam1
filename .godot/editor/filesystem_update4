@@ -17,3 +17,6 @@ res://Objects/Bandaid.tscn
 res://Objects/Bandaid.gd
 res://Objects/Mitt.tscn
 res://Objects/Mitt.gd
+res://startpage/start_page.tscn
+res://CanvasLayer.gd
+res://transitionscript.tscn
