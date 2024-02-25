@@ -1,5 +1,9 @@
-PointLight2D
+StaticBody2D
+CollisionShape2D
+Area2D
 Sprite2D
+AnimationPlayer
+PointLight2D
 AnimatedSprite2D
 Node2D
 ParallaxLayer
@@ -8,4 +12,3 @@ Camera2D
 CanvasLayer
 Button
 RichTextLabel
-TextEdit

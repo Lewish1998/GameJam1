@@ -9,7 +9,7 @@ var action_pressed = 0
 func _on_area_2d_body_entered(body):
 	if body.name == "Character":
 		print("Char entered")
-		$DialogBox.show_dialog("Press 'E' to open")
+		$DialogBox.show_dialog("Press 'E' to interact")
 		
 		is_entered = true
 		
@@ -25,7 +25,7 @@ func _process(_delta):
 			action_pressed += 1
 			
 			GameObjects.num_objects += 1
-			$DialogBox.show_dialog("A chest.. it has a yellow brush. Reminds me of my yellow brushing days...")
+			$DialogBox.show_dialog("The pages are still crinkled at the corners - I must have gotten them wet.")
 			 
 		if Input.is_action_just_pressed("Interact") and action_pressed == 1: # press button to progress not working
 			action_pressed += 1
@@ -42,4 +42,12 @@ func _process(_delta):
 			sound_player.stream = sound_effect
 			sound_player.play()
 
+
+
+func _on_area_2d_area_entered(area):
+	pass # Replace with function body.
+
+
+func _on_area_2d_area_exited(area):
+	pass # Replace with function body.
 

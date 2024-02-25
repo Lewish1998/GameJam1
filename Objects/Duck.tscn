@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwour11banpvk"]
+
+[ext_resource type="Texture2D" uid="uid://jx0d6rj0rrso" path="res://img/duck.png" id="1_7lecp"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ddo5x"]
+radius = 133.79
+height = 341.888
+
+[node name="Duck" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7lecp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(23, 50)
+rotation = 0.977384
+shape = SubResource("CapsuleShape2D_ddo5x")

@@ -1,7 +1,10 @@
-res://Objects/book.tscn
-res://Char/character.tscn
-res://Objects/object.tscn
-res://Background/rain.tscn
-res://Background/BG.tscn
-res://room1/room_1.tscn
+res://Objects/Bannister.tscn
 res://room1/room_1.gdshader
+res://room1/room_1.tscn
+res://room2/room_2.tscn
+res://Char/character.tscn
+res://UI/Transition.tscn
+res://Objects/Book.tscn
+res://Objects/chest.tscn
+res://Objects/bathsalts.tscn
+res://UI/DialogBox.tscn

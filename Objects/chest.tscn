@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgytkajcmfalk"]
+
+[ext_resource type="Script" path="res://Objects/chest.gd" id="1_0jtiv"]
+[ext_resource type="Texture2D" uid="uid://dhlqm7frwhmgm" path="res://img/Trunknew.png" id="2_i1iu2"]
+[ext_resource type="PackedScene" uid="uid://clnlybl3b6l01" path="res://UI/DialogBox.tscn" id="3_h25rt"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_aama3"]
+radius = 158.248
+height = 400.578
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d0mex"]
+radius = 290.47
+height = 580.94
+
+[node name="Chest" type="StaticBody2D"]
+script = ExtResource("1_0jtiv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-29, 41)
+scale = Vector2(1.15859, 1.15859)
+texture = ExtResource("2_i1iu2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-42, 75)
+rotation = 0.860447
+shape = SubResource("CapsuleShape2D_aama3")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-38, 73)
+rotation = 0.862193
+shape = SubResource("CapsuleShape2D_d0mex")
+
+[node name="DialogBox" parent="." instance=ExtResource("3_h25rt")]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
