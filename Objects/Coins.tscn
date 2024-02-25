@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://snx5fkrtkavv"]
+
+[ext_resource type="Script" path="res://Objects/Coins.gd" id="1_nww0n"]
+[ext_resource type="Texture2D" uid="uid://e0ph5pmv8u43" path="res://img/Coins .png" id="2_8766q"]
+[ext_resource type="PackedScene" uid="uid://clnlybl3b6l01" path="res://UI/DialogBox.tscn" id="3_wi0qc"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tfd1r"]
+radius = 93.059
+height = 393.233
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8usvb"]
+radius = 250.944
+
+[node name="Coins" type="StaticBody2D"]
+script = ExtResource("1_nww0n")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-5, 3)
+texture = ExtResource("2_8766q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-11, 15)
+rotation = 1.36485
+shape = SubResource("CapsuleShape2D_tfd1r")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(8, 20)
+shape = SubResource("CircleShape2D_8usvb")
+
+[node name="DialogBox" parent="." instance=ExtResource("3_wi0qc")]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

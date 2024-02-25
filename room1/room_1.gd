@@ -12,7 +12,6 @@ func _ready():
 	sound_player.stream = sound_effect
 	sound_player.play()
 
-	transition_scene.disabled = true
 		
 	
 #
