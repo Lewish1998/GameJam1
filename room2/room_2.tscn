@@ -42,7 +42,7 @@ scale = Vector2(0.438248, 0.438248)
 [node name="Mitt" parent="." instance=ExtResource("4_os8vq")]
 position = Vector2(2854.02, 1126.18)
 rotation = 0.694641
-scale = Vector2(0.327543, 0.322512)
+scale = Vector2(0.327776, 0.322293)
 
 [node name="Bandaid" parent="." instance=ExtResource("5_pdwn8")]
 position = Vector2(1826.77, 1834)

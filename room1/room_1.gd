@@ -8,7 +8,7 @@ var transition_scene = load("res://UI/Transition.tscn").instantiate()
 func _ready():
 	# Add the AudioStreamPlayer as a child to the player node
 	add_child(sound_player)
-	var sound_effect = load("res://SoundEffects/Ominous Drone Grey Room.mp3")
+	var sound_effect = load("res://SoundEffects/Yellow Room Music.mp3")
 	sound_player.stream = sound_effect
 	sound_player.play()
 
