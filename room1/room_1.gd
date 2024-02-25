@@ -27,17 +27,3 @@ func _process(delta):
 		get_tree().change_scene_to_file("res://room2/room_2.tscn")
 		GameObjects.num_objects = 0
 		GameObjects.current_room = "Pond"
-
-
-#
-#func show_transition():
-	##var transition_scene = load("res://UI/Transition.tscn").instantiate()
-	##add_child(transition_scene)
-	##transition_scene.get_node("AnimationPlayer").connect("animation_finished", self, "_on_transition_finished")
-	#
-	#transition_scene.show()
-	#transition_scene.get_node("transition")
-#
-#func _on_transition_finished():
-	#get_tree().change_scene("res://room2/room_2.tscn")
-

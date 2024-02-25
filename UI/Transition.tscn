@@ -7,6 +7,17 @@
 script = ExtResource("1_ualm1")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(360, 170)
+position = Vector2(358, 97)
 scale = Vector2(0.878125, 1.0125)
 texture = ExtResource("1_uofsm")
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = -490.819
+offset_top = 340.741
+offset_right = 564.182
+offset_bottom = 681.741
+theme_override_font_sizes/font_size = 60
+text = "Professor Induckia Quones - he was the best companion for my stories. I didn’t get to travel very far but we still had many adventures."
+vertical_alignment = 1
+autowrap_mode = 3
+metadata/_edit_use_anchors_ = true
