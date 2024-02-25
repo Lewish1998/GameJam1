@@ -10,10 +10,10 @@ script = ExtResource("1_x6qp2")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 888.0
-offset_top = 247.0
-offset_right = 1110.0
-offset_bottom = 361.0
+offset_left = 852.0
+offset_top = 307.0
+offset_right = 1074.0
+offset_bottom = 421.0
 grow_horizontal = 2
 text = "Start
 "
@@ -22,10 +22,10 @@ text = "Start
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 890.0
-offset_top = 423.0
-offset_right = 1112.0
-offset_bottom = 537.0
+offset_left = 854.0
+offset_top = 483.0
+offset_right = 1076.0
+offset_bottom = 597.0
 grow_horizontal = 2
 text = "How to play
 "
@@ -34,14 +34,17 @@ text = "How to play
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = 887.0
-offset_top = 605.0
-offset_right = 1109.0
-offset_bottom = 719.0
+offset_left = 851.0
+offset_top = 665.0
+offset_right = 1073.0
+offset_bottom = 779.0
 grow_horizontal = 2
 text = "Quit"
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("2_21ylf")]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
 
 [connection signal="pressed" from="Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="Howtoplay" to="." method="_on_howtoplay_pressed"]

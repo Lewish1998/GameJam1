@@ -114,4 +114,5 @@ scale = Vector2(1.41823, 1.3529)
 texture = ExtResource("10_aapjk")
 
 [node name="Transition" parent="." instance=ExtResource("12_4v2tb")]
-position = Vector2(1015, 952)
+position = Vector2(931, 987)
+scale = Vector2(0.713938, 0.713938)

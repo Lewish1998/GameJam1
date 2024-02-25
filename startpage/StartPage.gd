@@ -7,7 +7,7 @@ func _ready():
 	
 
 func _on_start_pressed():
-	get_tree().change_scene_to_file("res://transition/transition.tscn")
+	get_tree().change_scene_to_file("res://room1/room_1.tscn")
 
 
 func _on_quit_pressed():

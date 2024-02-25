@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=3 uid="uid://bfdouvkhyv1ch"]
 
-[ext_resource type="Script" path="res://room1/room_1.gd" id="1_854r2"]
+[ext_resource type="Script" path="res://room2/room_2.gd" id="1_oib4v"]
 [ext_resource type="Texture2D" uid="uid://ueksllonr3qi" path="res://img/Scene2yellow.png" id="2_g2x8t"]
 [ext_resource type="PackedScene" uid="uid://snx5fkrtkavv" path="res://Objects/Coins.tscn" id="3_23ndk"]
 [ext_resource type="PackedScene" uid="uid://cfsa3a5ati2ko" path="res://Char/character.tscn" id="4_ewuvv"]
@@ -28,7 +28,7 @@ height = 1120.44
 
 [node name="Room2" type="Node2D"]
 scale = Vector2(0.790465, 0.791167)
-script = ExtResource("1_854r2")
+script = ExtResource("1_oib4v")
 
 [node name="BG" type="Sprite2D" parent="."]
 position = Vector2(1551, 1130)
