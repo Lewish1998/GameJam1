@@ -19,3 +19,13 @@ func _process(delta):
 
 		#await get_tree().create_timer(6).timeout
 		#GameObjects.scene_change = 1
+
+		var sound_player := AudioStreamPlayer.new()
+		var transition_scene = load("res://UI/Transition.tscn").instantiate()
+		#func _ready():
+			# Add the AudioStreamPlayer as a child to the player node
+		add_child(sound_player)
+		var sound_effect = load("res://SoundEffects/Victory Noise .mp3")
+		sound_player.stream = sound_effect
+		sound_player.play()
+	
