@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cjdl4yslfc2un" path="res://UI/ui.tscn" id="5_yfrgx"]
 [ext_resource type="PackedScene" uid="uid://puttn1s4qx2c" path="res://Objects/bathsalts.tscn" id="6_31w4d"]
 [ext_resource type="PackedScene" uid="uid://cgytkajcmfalk" path="res://Objects/chest.tscn" id="6_a1c5w"]
-[ext_resource type="PackedScene" uid="uid://dodhu7ahl2nsp" path="res://Objects/book.tscn" id="7_cnwa3"]
+[ext_resource type="PackedScene" uid="uid://dodhu7ahl2nsp" path="res://Objects/Book.tscn" id="7_cnwa3"]
 [ext_resource type="Texture2D" uid="uid://cyvynfbu07vn0" path="res://img/Scene1foreground.png" id="10_aapjk"]
 [ext_resource type="PackedScene" uid="uid://dnud0ckl5jbwm" path="res://UI/Transition.tscn" id="12_4v2tb"]
 

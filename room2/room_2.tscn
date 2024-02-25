@@ -1,10 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://bfdouvkhyv1ch"]
+[gd_scene load_steps=13 format=3 uid="uid://bfdouvkhyv1ch"]
 
 [ext_resource type="Script" path="res://room1/room_1.gd" id="1_854r2"]
 [ext_resource type="Texture2D" uid="uid://ueksllonr3qi" path="res://img/Scene2yellow.png" id="2_g2x8t"]
-[ext_resource type="PackedScene" uid="uid://cgytkajcmfalk" path="res://Objects/chest.tscn" id="3_mc6t4"]
+[ext_resource type="PackedScene" uid="uid://snx5fkrtkavv" path="res://Objects/Coins.tscn" id="3_23ndk"]
 [ext_resource type="PackedScene" uid="uid://cfsa3a5ati2ko" path="res://Char/character.tscn" id="4_ewuvv"]
+[ext_resource type="PackedScene" uid="uid://bt12r18qb8kca" path="res://Objects/Mitt.tscn" id="4_os8vq"]
 [ext_resource type="PackedScene" uid="uid://cjdl4yslfc2un" path="res://UI/ui.tscn" id="5_2dnq8"]
+[ext_resource type="PackedScene" uid="uid://nl1fp0g2yaxy" path="res://Objects/Bandaid.tscn" id="5_pdwn8"]
 [ext_resource type="Texture2D" uid="uid://blu0snelqjp8k" path="res://img/Foreground.png" id="6_yp6ce"]
 
 [sub_resource type="Gradient" id="Gradient_ofryr"]
@@ -33,15 +35,24 @@ position = Vector2(1551, 1130)
 scale = Vector2(1.64559, 1.74469)
 texture = ExtResource("2_g2x8t")
 
-[node name="Object" parent="." instance=ExtResource("3_mc6t4")]
-position = Vector2(1976, 872)
+[node name="Coins" parent="." instance=ExtResource("3_23ndk")]
+position = Vector2(289.703, 1491.47)
+scale = Vector2(0.438248, 0.438248)
 
-[node name="Object2" parent="." instance=ExtResource("3_mc6t4")]
-position = Vector2(365, 1172)
+[node name="Mitt" parent="." instance=ExtResource("4_os8vq")]
+position = Vector2(2854.02, 1126.18)
+rotation = 0.694641
+scale = Vector2(0.327776, 0.322293)
+
+[node name="Bandaid" parent="." instance=ExtResource("5_pdwn8")]
+position = Vector2(1826.77, 1834)
+rotation = 0.539307
+scale = Vector2(0.238197, 0.238197)
 
 [node name="UI" parent="." instance=ExtResource("5_2dnq8")]
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
+visible = false
 position = Vector2(1554, 1116.5)
 scale = Vector2(49.7812, 35.6094)
 energy = 0.56
@@ -55,7 +66,7 @@ scale = Vector2(1.65573, 1.76067)
 texture = ExtResource("6_yp6ce")
 
 [node name="Character" parent="." instance=ExtResource("4_ewuvv")]
-position = Vector2(564, 1685)
+position = Vector2(594.587, 2043.82)
 scale = Vector2(5, 5.03837)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]

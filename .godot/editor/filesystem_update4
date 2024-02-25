@@ -8,3 +8,12 @@ res://Objects/Book.tscn
 res://Objects/chest.tscn
 res://Objects/bathsalts.tscn
 res://UI/DialogBox.tscn
+res://Objects/Coins.gd
+res://Objects/Coins.tscn
+res://room1/room_1.gd
+res://Objects/Phone.tscn
+res://Objects/Phone.gd
+res://Objects/Bandaid.tscn
+res://Objects/Bandaid.gd
+res://Objects/Mitt.tscn
+res://Objects/Mitt.gd
