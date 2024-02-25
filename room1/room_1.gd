@@ -11,8 +11,12 @@ func _ready():
 	var sound_effect = load("res://SoundEffects/Ominous Drone Grey Room.mp3")
 	sound_player.stream = sound_effect
 	sound_player.play()
+	
+	print("Testing")
+	
 
-	transition_scene.disabled = true
+	
+
 		
 	
 #
@@ -36,6 +40,9 @@ func _process(delta):
 		GameObjects.num_objects = 0
 		GameObjects.current_room = "Pond"
 		show_transition()
+		
+		await get_tree().create_timer(6).timeout
+		get_tree().change_scene_to_file("res://room2/room_2.tscn")
 
 func show_transition():
 	#var transition_scene = load("res://UI/Transition.tscn").instantiate()
